@@ -159,5 +159,5 @@ console.log('error l',error)
 
 
 app.listen(PORT, () => {
-console.log(`Running on ${PORT}`);
+console.log(`Running on ${PORT}`, database_url);
 })  
