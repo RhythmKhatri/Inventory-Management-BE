@@ -4,7 +4,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import dotenv from 'dotenv';
 import addPEInput from "./APIs/addPEInput.js";
-import getAllPEInputs from "./APIs/getPEInput.js"
+import getAllPEInputs from "./APIs/getPeInput.js"
 import deletePEInput from "./APIs/deletePEInput.js";
 import addFieldInput from "./APIs/addFieldInput.js";
 import getAllFieldInputs from "./APIs/getFieldInput.js";
