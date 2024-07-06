@@ -1,7 +1,7 @@
 import { Field_Input } from "../Models/models.js";
 
 // Function to retrieve all PE_Input records
-const getAllPEInputs = async () => {
+const getAllFieldInputs = async () => {
     try {
         // Fetch all records from the database
         const field_inputs = await Field_Input.find();
@@ -20,4 +20,4 @@ const getAllPEInputs = async () => {
     }
 }
 
-export default getAllPEInputs;
+export default getAllFieldInputs;
