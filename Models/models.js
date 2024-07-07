@@ -19,7 +19,9 @@ const FieldInput = new mongoose.Schema({
     shipment_date: String,
     paid_samples: String,
     shipping_status: String,
-    priority: Number
+    priority: Number,
+    field_comment: String,
+
   });
   
   export const Field_Input = mongoose.model('field_inputs', FieldInput);

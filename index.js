@@ -10,8 +10,12 @@ import addFieldInput from "./APIs/addFieldInput.js";
 import getAllFieldInputs from "./APIs/getFieldInput.js";
 import deleteFieldInput from "./APIs/deleteFieldInput.js";
 import dashboard from "./APIs/dashboard.js";
+import updatePEInput from "./APIs/updatedPEInput.js"
+import updateFieldInput from "./APIs/updateFieldInput.js"
+import setPriority from "./APIs/setPriority.js"
+
 const app = express();
-dotenv.config();
+dotenv.config();   
 
 const PORT = process.env.PORT || 3001;
 app.use(cors({
@@ -28,6 +32,29 @@ app.post('/addPEInput', async (request, response) => {
     const userData = request.body;
       
     const res = await addPEInput(userData);
+    return response.json(res);
+  
+  });
+
+  app.post('/setPriority', async (request, response) => {
+    const userData = request.body;
+      
+    const res = await setPriority(userData);
+    return response.json(res);
+  
+  });
+  
+  app.post('/updatePEInput', async (request, response) => {
+    const userData = request.body;
+      
+    const res = await updatePEInput(userData);
+    return response.json(res);
+  
+  });
+  app.post('/updateFieldInput', async (request, response) => {
+    const userData = request.body;
+      
+    const res = await updateFieldInput(userData);
     return response.json(res);
   
   });

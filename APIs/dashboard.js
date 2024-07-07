@@ -9,6 +9,7 @@ const dashboard = async () => {
             const matchingPEInput = pe_inputs.find(pe => pe.device_opn === field.device_opn && pe.version === field.version);
             if (matchingPEInput) {
               return {
+                id: field._id,
                 customer: field.customer,
                 device_opn: field.device_opn,
                 version: field.version,
@@ -17,6 +18,7 @@ const dashboard = async () => {
                 paid_samples: field.paid_samples,
                 shipping_status: field.shipping_status,
                 priority: field.priority,
+                field_comment: field.field_comment,
                 quantity: matchingPEInput.quantity,
                 quantity_available: matchingPEInput.quantity_available,
                 pe_comment: matchingPEInput.pe_comment
