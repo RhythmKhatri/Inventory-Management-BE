@@ -19,7 +19,7 @@ dotenv.config();
 
 const PORT = process.env.PORT || 3001;
 app.use(cors({
-    origin: ['http://localhost:3000', 'https://inventorymanagement-ti.netlify.app'],
+    origin: ['http://localhost:3000', 'https://inventorymanagement-ti-kshitiz-v9.netlify.app'],
     methods: 'GET,POST,PUT',
     allowedHeaders: ['Content-Type', 'Authorization'],
 }));
